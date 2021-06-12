@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CAECBE"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cekmeceAdi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kiyafetEkle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#DE65EC"
+            android:text="Kıyafet Ekle"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cekmeceSil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#BA3737"
+            android:backgroundTintMode="src_over"
+            android:text="Sil"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/kiyafetList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:backgroundTint="#90CA7C"
+        android:nestedScrollingEnabled="true" />
+
+</LinearLayout>

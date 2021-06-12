@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F1DE"
+    android:orientation="vertical"
+    tools:context=".KabinOdasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/kombinRecView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/BasUstu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image" />
+
+            <ImageButton
+                android:id="@+id/Surat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image" />
+
+            <ImageButton
+                android:id="@+id/UstBeden"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image" />
+
+            <ImageButton
+                android:id="@+id/AltBeden"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image" />
+
+            <ImageButton
+                android:id="@+id/Ayak"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/kombinKaydet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#40BA54"
+                    android:text="KOMBİNİ KAYDET" />
+
+                <Button
+                    android:id="@+id/kombinPaylas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#6540BA"
+                    android:text="PAYLAŞ" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640141353277",
+    "project_id": "mobilproje-316518",
+    "storage_bucket": "mobilproje-316518.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640141353277:android:c151620c46f1ee903ce554",
+        "android_client_info": {
+          "package_name": "com.example.sanaldolabim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640141353277-ua08td2kcn8t2f6s5vb0mvkkp1qsd0q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrKTsnSTgRoIRcZyyOR3vBucqr_QGBWMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640141353277-ua08td2kcn8t2f6s5vb0mvkkp1qsd0q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

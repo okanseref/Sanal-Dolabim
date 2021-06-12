@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5ECEB"
+    tools:context=".EtkinlikEkle">
+
+    <EditText
+        android:id="@+id/etkinlikismiedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Etkinlik ismi"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etkinlikturuedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Etkinlik türü"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etkinlikismiedit" />
+
+    <EditText
+        android:id="@+id/etkinliktarihedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Etkinlik tarihi"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etkinlikturuedit" />
+
+    <EditText
+        android:id="@+id/etkinliklokasyonedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Etkinlik lokasyonu"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etkinliktarihedit" />
+
+    <Button
+        android:id="@+id/kombinsec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6730B5"
+        android:text="KOMBİN SEÇ"
+        app:layout_constraintEnd_toEndOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintTop_toBottomOf="@+id/kombinAdi" />
+
+    <Button
+        android:id="@+id/lokasyonSec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6730B5"
+        android:text="LOKASYON SEÇ"
+        app:layout_constraintEnd_toEndOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintTop_toBottomOf="@+id/etkinliklokasyonedit" />
+
+    <Button
+        android:id="@+id/etkinlikkaydet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#20A616"
+        android:text="KAYDET"
+        app:layout_constraintEnd_toEndOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintTop_toBottomOf="@+id/kombinsec" />
+
+    <TextView
+        android:id="@+id/kombinAdi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="#2C2C2C"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintStart_toStartOf="@+id/etkinliklokasyonedit"
+        app:layout_constraintTop_toBottomOf="@+id/lokasyonSec" />
+</androidx.constraintlayout.widget.ConstraintLayout>

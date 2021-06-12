@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#B7C2CC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etkinlikAdi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ABEDFA"
+            android:gravity="center|start"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#4E4E4E"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etkinlikTuru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#96C1BD"
+            android:gravity="center|start"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#4E4E4E"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etkinlikTarihi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ABEDFA"
+            android:gravity="center|start"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#4E4E4E"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etkinlikLokasyon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#96C1BD"
+            android:gravity="center|start"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#4E4E4E"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Kombin"
+            android:textColor="#075317"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/basustuetk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/suratetk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/ustbedenetk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/altbedenetk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/ayakkabietk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/etkinlikSil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F36161"
+            android:text="Sil" />
+
+        <Button
+            android:id="@+id/etkinlikGuncelle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Güncelle" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B3FA65C"
+    tools:context=".KiyafetEkle">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.02" />
+
+        <ImageButton
+            android:id="@+id/kiyafetFoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="#FDFFFFFF"
+            android:backgroundTint="#ADA3A3A3"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image" />
+
+        <EditText
+            android:id="@+id/kiyafetTuru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Türü"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/kiyafetRenk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Renk"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/kiyafetDesen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Desen"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/kiyafetTarih"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Tarih"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/kiyafetFiyat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Fiyat"
+            android:inputType="number" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveKiyafet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:backgroundTint="#5AD16D"
+            android:text="SAVE" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
