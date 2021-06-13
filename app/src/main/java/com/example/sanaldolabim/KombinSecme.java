@@ -52,8 +52,7 @@ public class KombinSecme extends AppCompatActivity {
                 FeedReaderContract.KombinDB.ayakkabi
         };
 
-        // Filter results WHERE "title" = 'My Title'
-        String selection = "";//FeedReaderContract.Question.OWNER + " = ?";
+        String selection = "";
         String[] selectionArgs = {  };
 
         String sortOrder =

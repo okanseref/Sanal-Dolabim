@@ -79,15 +79,6 @@ public class Menu extends AppCompatActivity {
                     @Override
                     public void onActivityResult(ActivityResult result) {
                         RefreshMenuList();
-
-                        if (result.getResultCode() == 0) {
-                            // There are no request codes
-                            //MesajOlustur("Kıyafet başarıyla eklendi");
-                        }
-                        if (result.getResultCode() == 1) {
-                            // There are no request codes
-                            //MesajOlustur("Kıyafet başarıyla güncellendi");
-                        }
                     }
 
                 });
@@ -237,8 +228,6 @@ public class Menu extends AppCompatActivity {
         filter.addAction(Intent.ACTION_POWER_CONNECTED);
         this.registerReceiver(br, filter);
 
-       // IntentFilter filter = new IntentFilter(Intent.ACTION_POWER_CONNECTED);
-        //registerReceiver(br, filter, Manifest.permission.ACTION, null );
         System.out.println("Registered");
 
     }
@@ -260,8 +249,6 @@ public class Menu extends AppCompatActivity {
                 FeedReaderContract.KiyafetDB.cekmeceAdi,
                 FeedReaderContract.KiyafetDB._ID
         };
-
-        // Filter results WHERE "title" = 'My Title'
 
         String selection = "";
         String[] selectionArgs = {};

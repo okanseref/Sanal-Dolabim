@@ -77,15 +77,12 @@ public class KabinOdasi extends AppCompatActivity {
                                 ((BitmapDrawable)ustbeden.getDrawable()).getBitmap(),
                                 ((BitmapDrawable)altbeden.getDrawable()).getBitmap(),
                                 ((BitmapDrawable)ayakkabi.getDrawable()).getBitmap());
-                        //b=((BitmapDrawable)surat.getDrawable()).getBitmap();
                         String bitmapPath = MediaStore.Images.Media.insertImage(getContentResolver(), b,"title", null);
                         Uri bitmapUri = Uri.parse(bitmapPath);
                         sendIntent.putExtra(Intent.EXTRA_STREAM,bitmapUri );
                         sendIntent.setType("image/png");
                         startActivity(sendIntent);
                     }
-                } else {
-                    //do here
                 }
 
             }
@@ -104,9 +101,7 @@ public class KabinOdasi extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case REQUEST: {
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    //do here
-                } else {
+                if (!(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
                     Toast.makeText(getApplicationContext(), "The app was not allowed to write in your storage", Toast.LENGTH_LONG).show();
                 }
             }
@@ -193,7 +188,6 @@ public class KabinOdasi extends AppCompatActivity {
                 });
     }
     public Bitmap GetKiyafetImageFromID(String ID){
-        List<Kiyafet> questions = new ArrayList<>();
 
         FeedReaderDbHelper dbHelper = new FeedReaderDbHelper(getApplicationContext());
         SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -210,7 +204,6 @@ public class KabinOdasi extends AppCompatActivity {
                 FeedReaderContract.KiyafetDB._ID
         };
 
-        // Filter results WHERE "title" = 'My Title'
 
         String selection = FeedReaderContract.KiyafetDB._ID + " = ?";
         System.out.println("NULL DİYO BUNA:"+ID);
@@ -240,8 +233,6 @@ public class KabinOdasi extends AppCompatActivity {
 
     }
     public void KombinDegistir(Kombin k){
-        System.out.println("NULL DİYO"+k.getBasustu());
-        System.out.println("NULL DİYO"+k);
         basustu.setImageBitmap(GetKiyafetImageFromID(k.getBasustu()));
         basustuID=k.getBasustu();
         surat.setImageBitmap(GetKiyafetImageFromID(k.getSurat()));
@@ -305,8 +296,7 @@ public class KabinOdasi extends AppCompatActivity {
                 FeedReaderContract.KombinDB.ayakkabi
         };
 
-        // Filter results WHERE "title" = 'My Title'
-        String selection = "";//FeedReaderContract.Question.OWNER + " = ?";
+        String selection = "";
         String[] selectionArgs = {  };
 
         String sortOrder =
@@ -332,8 +322,6 @@ public class KabinOdasi extends AppCompatActivity {
 
             q.setID(cursor.getString(cursor.getColumnIndexOrThrow(FeedReaderContract.KombinDB._ID)));
             kombins.add(q);
-            System.out.println(q.getID()+" KOMBİN ID BU");
-
         }
         cursor.close();
         db.close();
