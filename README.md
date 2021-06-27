@@ -1,4 +1,4 @@
-# Sanal-Dolabım
+# Virtual Clothes Cabinet
 
 Android Studio project for storing clothes & combines.
 
